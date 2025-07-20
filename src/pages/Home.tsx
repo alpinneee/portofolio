@@ -1,0 +1,204 @@
+import React from 'react';
+import Hero from '../components/Hero';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Hero />
+      
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Check out some of my recent work that showcases my skills and expertise.
+            </p>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Project 1 */}
+            <motion.div
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="h-48 bg-gray-300 dark:bg-gray-700"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Project One</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  A brief description of the project and the technologies used.
+                </p>
+                <Link
+                  to="/projects"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </motion.div>
+            
+            {/* Project 2 */}
+            <motion.div
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="h-48 bg-gray-300 dark:bg-gray-700"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Project Two</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  A brief description of the project and the technologies used.
+                </p>
+                <Link
+                  to="/projects"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </motion.div>
+            
+            {/* Project 3 */}
+            <motion.div
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="h-48 bg-gray-300 dark:bg-gray-700"></div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Project Three</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  A brief description of the project and the technologies used.
+                </p>
+                <Link
+                  to="/projects"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  Learn more →
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              to="/projects"
+              className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
+            >
+              View All Projects
+            </Link>
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">My Skills</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Here are some of the technologies and tools I work with.
+            </p>
+          </motion.div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {/* Skill Icons */}
+            {['React', 'TypeScript', 'Node.js', 'Tailwind CSS', 'Next.js', 'Git'].map((skill, index) => (
+              <motion.div
+                key={index}
+                className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-4 flex flex-col items-center justify-center"
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-3">
+                  {/* Icon placeholder */}
+                </div>
+                <p className="text-gray-900 dark:text-white font-medium">{skill}</p>
+              </motion.div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              to="/skills"
+              className="px-6 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white font-medium rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+            >
+              View All Skills
+            </Link>
+          </div>
+        </div>
+      </section>
+      
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <motion.div
+              className="md:w-1/2 mb-10 md:mb-0"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Let's Work Together</h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
+                I'm currently available for freelance work and open to new opportunities.
+                If you have a project that needs some creative touch, let's discuss it.
+              </p>
+              <Link
+                to="/contact"
+                className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors"
+              >
+                Get in Touch
+              </Link>
+            </motion.div>
+            
+            <motion.div
+              className="md:w-1/2 flex justify-center"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="w-full max-w-md bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
+                    <p className="text-gray-600 dark:text-gray-300">your.email@example.com</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
+                    <p className="text-gray-600 dark:text-gray-300">+1 (123) 456-7890</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home; 
