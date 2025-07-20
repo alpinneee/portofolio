@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero: React.FC = () => {
   return (
@@ -14,11 +15,26 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-              Hi, I'm <span className="text-blue-600 dark:text-blue-400">muhammad alfin zubair</span>
+              Hi, I'm <span className="text-blue-600 dark:text-blue-400">Muhammad Alfin Zubair</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-              Full Stack Developer | UI/UX Designer | Problem Solver | AI Enthusiast
-            </p>
+            <div className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 h-16">
+              <TypeAnimation
+                sequence={[
+                  'Full Stack Developer',
+                  1000,
+                  'UI/UX Designer',
+                  1000,
+                  'Problem Solver',
+                  1000,
+                  'AI Enthusiast',
+                  1000
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+                style={{ display: 'inline-block' }}
+              />
+            </div>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Link
                 to="/contact"
@@ -40,16 +56,20 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center overflow-hidden shadow-lg">
-              {/* Profile image */}
-              <img 
-                src="/public/profile-placeholder.jpg" 
-                alt="Profile" 
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = `https://ui-avatars.com/api/?name=Muhammad+Alfin+Zubair&size=200&background=random`;
-                }}
-              />
+            <div className="relative p-1.5">
+              {/* Animated gradient border */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 animate-gradient-x"></div>
+              <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center overflow-hidden shadow-lg border-4 border-white dark:border-gray-800 relative z-10">
+                {/* Profile image */}
+                <img 
+                  src="/public/profile-placeholder.jpg" 
+                  alt="Profile" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = `https://ui-avatars.com/api/?name=Muhammad+Alfin+Zubair&size=200&background=random`;
+                  }}
+                />
+              </div>
             </div>
           </motion.div>
         </div>
