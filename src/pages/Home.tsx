@@ -177,7 +177,7 @@ const Home: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300">your.email@example.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">m.alfin.z117@gmail.com</p>
                   </div>
                 </div>
                 
@@ -189,7 +189,7 @@ const Home: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-300">+1 (123) 456-7890</p>
+                    <p className="text-gray-600 dark:text-gray-300">+62 838 7223 0135</p>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ const Layout: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow pt-16">
+      <main className="flex-grow pt-16 md:pt-20">
         <Outlet />
       </main>
       <Footer />
@@ -15,4 +15,4 @@ const Layout: React.FC = () => {
   );
 };
 
-export default Layout; 
+export default Layout;

@@ -48,8 +48,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-300 mt-1">your.email@example.com</p>
-                    <a href="mailto:your.email@example.com" className="text-blue-600 dark:text-blue-400 hover:underline mt-1 inline-block">
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">m.alfin.z117@gmail.com</p>
+                    <a href="mailto:m.alfin.z117@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline mt-1 inline-block">
                       Send an email
                     </a>
                   </div>
@@ -65,8 +65,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-300 mt-1">+1 (123) 456-7890</p>
-                    <a href="tel:+11234567890" className="text-blue-600 dark:text-blue-400 hover:underline mt-1 inline-block">
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">+62 838 7223 0135</p>
+                    <a href="tel:+6283872230135" className="text-blue-600 dark:text-blue-400 hover:underline mt-1 inline-block">
                       Call me
                     </a>
                   </div>
@@ -83,8 +83,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Location</h3>
-                    <p className="text-gray-600 dark:text-gray-300 mt-1">San Francisco, CA</p>
-                    <p className="text-gray-600 dark:text-gray-300 mt-1">United States</p>
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">depok, Indonesia</p>
+                    <p className="text-gray-600 dark:text-gray-300 mt-1">Indonesia</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/alpinneee"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://linkedin.com/in/yourusername"
+                    href="https://linkedin.com/in/muhammad-alfin-zubair-a6a29b299"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://twitter.com/yourusername"
+                    href="https://x.com/altozxy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -131,7 +131,7 @@ const Contact: React.FC = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://dribbble.com/yourusername"
+                    href="https://dribbble.com/alpinneee"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
               <iframe
                 title="Location Map"
                 className="w-full h-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017948534!3d37.75781499602523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1628608835040!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63439.51207413958!2d106.7267612516862!3d-6.397931359638915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e8d8d42175d7%3A0x94a2a913944d3643!2sKec.%20Sawangan%2C%20Kota%20Depok%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1753004112772!5m2!1sid!2sid"
                 loading="lazy"
               ></iframe>
             </div>
