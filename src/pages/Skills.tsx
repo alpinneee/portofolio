@@ -32,7 +32,7 @@ const toolsSkills = [
 
 const Skills: React.FC = () => {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24">
+    <div className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -40,8 +40,8 @@ const Skills: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">My Skills</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-4 glow-text">My Skills</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Here are the technologies and tools I work with to bring ideas to life.
           </p>
         </motion.div>
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
           {/* Frontend Skills */}
           <section>
             <motion.h2
-              className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center"
+              className="text-2xl font-bold text-white mb-8 text-center glow-text"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
@@ -93,7 +93,7 @@ const Skills: React.FC = () => {
           {/* Backend Skills */}
           <section>
             <motion.h2
-              className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center"
+              className="text-2xl font-bold text-white mb-8 text-center glow-text"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -136,7 +136,7 @@ const Skills: React.FC = () => {
           {/* Tools and Technologies */}
           <section>
             <motion.h2
-              className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center"
+              className="text-2xl font-bold text-white mb-8 text-center glow-text"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
@@ -178,58 +178,58 @@ const Skills: React.FC = () => {
         </div>
         
         <motion.div
-          className="mt-20 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 md:p-10"
+          className="mt-20 glass glass-card p-8 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+          <h2 className="text-2xl font-bold text-white mb-6 text-center glow-text">
             My Learning Journey
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-lg text-gray-200 mb-6">
             I'm passionate about continuous learning and staying up-to-date with the latest technologies and best practices in web development. Here are some of the areas I'm currently exploring:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Currently Learning</h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+            <div className="glass p-6 rounded-lg">
+              <h3 className="text-xl font-bold text-white mb-4">Currently Learning</h3>
+              <ul className="space-y-2 text-gray-200">
                 <li className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   Next.js and Server-Side Rendering
                 </li>
                 <li className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   AWS Cloud Services
                 </li>
                 <li className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   Testing with Cypress
                 </li>
               </ul>
             </div>
-            <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Future Interests</h3>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+            <div className="glass p-6 rounded-lg">
+              <h3 className="text-xl font-bold text-white mb-4">Future Interests</h3>
+              <ul className="space-y-2 text-gray-200">
                 <li className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   Machine Learning for Web Applications
                 </li>
                 <li className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   Blockchain Development
                 </li>
                 <li className="flex items-center">
-                  <svg className="w-5 h-5 text-blue-600 dark:text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-blue-400 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   Progressive Web Apps (PWAs)
@@ -245,13 +245,13 @@ const Skills: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Let's Build Something Amazing</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+          <h2 className="text-3xl font-bold text-white mb-6 glow-text">Let's Build Something Amazing</h2>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             With my skills and your ideas, we can create exceptional digital experiences that stand out.
           </p>
           <a
             href="/contact"
-            className="px-8 py-4 bg-blue-600 text-white text-lg font-medium rounded-md hover:bg-blue-700 transition-colors"
+            className="px-8 py-4 glass-button text-white text-lg font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
           >
             Get in Touch
           </a>

@@ -11,6 +11,7 @@ import './App.css';
 function App() {
   return (
     <Router>
+      <div className="liquid-bg"></div>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

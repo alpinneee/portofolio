@@ -74,7 +74,7 @@ const Projects: React.FC = () => {
     : projectsData.filter(project => project.category === filter);
   
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24">
+    <div className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,40 +82,40 @@ const Projects: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">My Projects</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-4 glow-text">My Projects</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Explore some of my recent work and personal projects.
           </p>
         </motion.div>
         
         <div className="flex justify-center mb-12">
-          <div className="inline-flex rounded-md shadow-sm">
+          <div className="inline-flex rounded-md glass">
             <button
               onClick={() => setFilter('all')}
-              className={`px-4 py-2 text-sm font-medium rounded-l-md ${
+              className={`px-4 py-2 text-sm font-medium rounded-l-md transition-all duration-300 ${
                 filter === 'all'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                  ? 'glass-button text-white'
+                  : 'text-white hover:glass-button'
               }`}
             >
               All Projects
             </button>
             <button
               onClick={() => setFilter('web')}
-              className={`px-4 py-2 text-sm font-medium ${
+              className={`px-4 py-2 text-sm font-medium transition-all duration-300 ${
                 filter === 'web'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                  ? 'glass-button text-white'
+                  : 'text-white hover:glass-button'
               }`}
             >
               Web Development
             </button>
             <button
               onClick={() => setFilter('mobile')}
-              className={`px-4 py-2 text-sm font-medium rounded-r-md ${
+              className={`px-4 py-2 text-sm font-medium rounded-r-md transition-all duration-300 ${
                 filter === 'mobile'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                  ? 'glass-button text-white'
+                  : 'text-white hover:glass-button'
               }`}
             >
               Mobile Apps
@@ -159,7 +159,7 @@ const Projects: React.FC = () => {
         
         {filteredProjects.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-gray-200">
               No projects found in this category.
             </p>
           </div>
@@ -171,13 +171,13 @@ const Projects: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Have a project in mind?</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
+          <h2 className="text-3xl font-bold text-white mb-6 glow-text">Have a project in mind?</h2>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Let's collaborate to bring your ideas to life. I'm always open to new challenges.
           </p>
           <a
-            href="mailto:your.email@example.com"
-            className="px-8 py-4 bg-blue-600 text-white text-lg font-medium rounded-md hover:bg-blue-700 transition-colors"
+            href="mailto:m.alfin.z117@gmail.com"
+            className="px-8 py-4 glass-button text-white text-lg font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
           >
             Start a Project
           </a>

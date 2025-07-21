@@ -42,12 +42,12 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get in Touch</h2>
+    <div className="glass glass-card p-6 md:p-8">
+      <h2 className="text-2xl font-bold text-white mb-6 glow-text">Get in Touch</h2>
       
       {submitStatus === 'success' && (
         <motion.div 
-          className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6"
+          className="glass border-l-4 border-green-500 text-green-100 p-4 mb-6"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
       
       {submitStatus === 'error' && (
         <motion.div 
-          className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-6"
+          className="glass border-l-4 border-red-500 text-red-100 p-4 mb-6"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -67,7 +67,7 @@ const ContactForm: React.FC = () => {
       
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-1">
             Name
           </label>
           <input
@@ -77,12 +77,12 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            className="w-full px-4 py-2 glass-input rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
           />
         </div>
         
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-1">
             Email
           </label>
           <input
@@ -92,12 +92,12 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            className="w-full px-4 py-2 glass-input rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
           />
         </div>
         
         <div className="mb-4">
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+          <label htmlFor="subject" className="block text-sm font-medium text-gray-200 mb-1">
             Subject
           </label>
           <input
@@ -107,12 +107,12 @@ const ContactForm: React.FC = () => {
             value={formData.subject}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            className="w-full px-4 py-2 glass-input rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
           />
         </div>
         
         <div className="mb-6">
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-200 mb-1">
             Message
           </label>
           <textarea
@@ -122,15 +122,15 @@ const ContactForm: React.FC = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
+            className="w-full px-4 py-2 glass-input rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
           ></textarea>
         </div>
         
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-md transition-colors ${
-            isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-blue-700'
+          className={`w-full px-6 py-3 glass-button text-white font-medium rounded-md transition-all duration-300 btn-hover-effect ${
+            isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:scale-105'
           }`}
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}

@@ -2,11 +2,11 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white dark:bg-gray-800 py-4 sm:py-6 mt-auto">
+    <footer className="glass py-4 sm:py-6 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+            <p className="text-sm sm:text-base text-white">
               &copy; {new Date().getFullYear()} Muhammad Alfin Zubair. All rights reserved.
             </p>
           </div>
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+              className="text-white hover:text-gray-200 transition-all duration-300"
             >
               <span className="sr-only">GitHub</span>
               <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+              className="text-white hover:text-gray-200 transition-all duration-300"
             >
               <span className="sr-only">LinkedIn</span>
               <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+              className="text-white hover:text-gray-200 transition-all duration-300"
             >
               <span className="sr-only">Twitter</span>
               <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

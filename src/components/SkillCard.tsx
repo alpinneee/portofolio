@@ -11,29 +11,30 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ title, icon, level, color }) => {
   return (
     <motion.div
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
-      whileHover={{ y: -5 }}
+      className="glass glass-card p-6"
+      whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.3 }}
     >
       <div className="flex items-center mb-4">
         <div 
-          className="w-12 h-12 rounded-full flex items-center justify-center mr-4"
-          style={{ backgroundColor: `${color}20` }}
+          className="w-12 h-12 rounded-full flex items-center justify-center mr-4 glass"
+          style={{ borderColor: color, borderWidth: '2px' }}
         >
           <img src={icon} alt={title} className="w-6 h-6" />
         </div>
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
+        <h3 className="text-lg font-semibold text-white">{title}</h3>
       </div>
-      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+      <div className="w-full bg-white bg-opacity-10 rounded-full h-2.5">
         <div 
           className="h-2.5 rounded-full" 
           style={{ 
             width: `${level * 20}%`,
-            backgroundColor: color
+            backgroundColor: color,
+            boxShadow: `0 0 10px ${color}80`
           }}
         ></div>
       </div>
-      <div className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+      <div className="mt-2 text-sm text-gray-200">
         {level === 1 && 'Beginner'}
         {level === 2 && 'Elementary'}
         {level === 3 && 'Intermediate'}
