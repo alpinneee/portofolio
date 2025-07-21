@@ -170,12 +170,14 @@ const About: React.FC = () => {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
+          <div className='flex justify-center'>
           <Link
             to="/contact"
             className="px-8 py-4 glass-button text-white text-lg font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
-          >
+            >
             Contact Me
           </Link>
+          </div>
         </motion.div>
       </div>
     </div>

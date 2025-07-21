@@ -6,6 +6,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
   
   body {
@@ -14,6 +20,7 @@
     animation: gradient-shift 20s ease infinite;
     min-height: 100vh;
     will-change: background-position;
+    overflow-y: scroll;
   }
 
   @keyframes gradient-shift {
@@ -27,22 +34,4 @@
       background-position: 0% 50%;
     }
   }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
 }

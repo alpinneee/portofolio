@@ -249,12 +249,14 @@ const Skills: React.FC = () => {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             With my skills and your ideas, we can create exceptional digital experiences that stand out.
           </p>
+          <div className='flex justify-center'>
           <a
             href="/contact"
             className="px-8 py-4 glass-button text-white text-lg font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
-          >
+            >
             Get in Touch
           </a>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <motion.div 
-            className="w-full md:w-1/2 mb-10 md:mb-0 text-center md:text-left"
+            className="w-full md:w-1/2 order-2 md:order-1 mb-10 md:mb-0 text-center md:text-left"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
           <motion.div 
-            className="w-full md:w-1/2 flex justify-center"
+            className="w-full md:w-1/2 order-1 md:order-2 flex justify-center mb-8 md:mb-0"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}

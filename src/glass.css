@@ -76,7 +76,7 @@
 
 .glass-navbar {
   position: fixed;
-  width: 100%;
+  width: calc(100% - 2rem);
   z-index: 100;
   transform: translateZ(0);
 }

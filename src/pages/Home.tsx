@@ -87,7 +87,7 @@ const Home: React.FC = () => {
             </motion.div>
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 flex justify-center">
             <Link
               to="/projects"
               className="px-6 py-3 glass-button text-white font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
@@ -129,10 +129,10 @@ const Home: React.FC = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 flex justify-center">
             <Link
               to="/skills"
-              className="px-6 py-3 glass-button text-white font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
+              className="px-5 py-2.5 sm:px-6 sm:py-3 glass-button text-white font-medium rounded-md transition-all duration-300 hover:scale-105 btn-hover-effect"
             >
               View All Skills
             </Link>
@@ -154,12 +154,14 @@ const Home: React.FC = () => {
                 I'm currently available for freelance work and open to new opportunities.
                 If you have a project that needs some creative touch, let's discuss it.
               </p>
+            <div className='flex justify'>
               <Link
                 to="/contact"
-                className="px-6 py-3 glass-button text-white font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
+                className="px-5 py-2.5 sm:px-6 sm:py-3 glass-button text-white font-medium rounded-md transition-all duration-300 hover:scale-105 btn-hover-effect"
               >
                 Get in Touch
               </Link>
+            </div>
             </motion.div>
             
             <motion.div

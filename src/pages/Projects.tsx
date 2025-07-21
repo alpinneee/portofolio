@@ -175,12 +175,14 @@ const Projects: React.FC = () => {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             Let's collaborate to bring your ideas to life. I'm always open to new challenges.
           </p>
+          <div className='flex justify-center'>
           <a
             href="mailto:m.alfin.z117@gmail.com"
             className="px-8 py-4 glass-button text-white text-lg font-medium rounded-md hover:scale-105 transition-all duration-300 btn-hover-effect"
           >
             Start a Project
           </a>
+          </div>
         </motion.div>
       </div>
     </div>
